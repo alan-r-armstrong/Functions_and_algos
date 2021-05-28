@@ -25,3 +25,11 @@ function a(n){
 }
 x = a(3) +a(5);
 console.log('x is', x);
+
+function op(a,b){
+    c = a+b;
+    console.log('c is', c);
+    return c;
+}
+x = op(2,3) + op(3,5);
+console.log('x is', x);
