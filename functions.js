@@ -282,3 +282,10 @@ else if(x > 25) {
 else {    
     console.log("small number");
 }
+
+var arr = [];
+for (var val = 3; val <= 99999; val +=3)
+{
+    arr.push(val);
+}
+console.log(arr);
