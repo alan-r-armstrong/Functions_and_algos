@@ -289,3 +289,22 @@ for (var val = 3; val <= 99999; val +=3)
     arr.push(val);
 }
 console.log(arr);
+
+function rCountdown(n)
+    if (n < 0) {
+    return;
+}
+console.log(n);
+rCountdown(n-1);
+
+rCountdown(10);
+
+function rFindMax(arr, ind = 0) {
+    // base case
+    if (ind == arr.length - 1) {
+        return arr[ind];
+    }
+    //recursion
+    return Math.max(arr[ind], rFindMax(arr,ind+1));
+}
+console.log(rFindMax([15, 10, 25, 5]));
