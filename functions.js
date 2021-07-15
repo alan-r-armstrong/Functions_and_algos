@@ -308,3 +308,16 @@ function rFindMax(arr, ind = 0) {
     return Math.max(arr[ind], rFindMax(arr,ind+1));
 }
 console.log(rFindMax([15, 10, 25, 5]));
+
+function CountDownBy8(){
+    for(var i=2019; i>0; i-=8){
+        console.log(i);
+        }
+    }
+    CountDownBy8();
+
+function celciusToFahrenheit(cDegrees) {
+    f = 9/5 * cDegrees + 32
+    return f;
+}
+console.log(celciusToFahrenheit(20));
